@@ -95,7 +95,7 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
     /**
      * Convert the object to its JSON representation.
      *
-     * @param int $options
+     * @param  int  $options
      */
     public function toJson($options = 0): string
     {
@@ -107,6 +107,6 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
      */
     public function render(): string
     {
-        return (string)$this->value;
+        return (string) $this->value;
     }
 }
