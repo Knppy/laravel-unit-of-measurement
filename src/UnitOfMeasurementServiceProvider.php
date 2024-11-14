@@ -2,6 +2,7 @@
 
 namespace Knppy\UnitOfMeasurement;
 
+use Illuminate\Database\Schema\Blueprint;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -17,5 +18,12 @@ class UnitOfMeasurementServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-unit-of-measurement')
             ->hasConfigFile();
+    }
+
+    public function packageRegistered(): void
+    {
+        Blueprint::macro('unit', function (string $column) {
+            return $this->json($column);
+        });
     }
 }

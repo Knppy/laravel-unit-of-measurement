@@ -41,6 +41,12 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
         return UnitCast::class;
     }
 
+    /**
+     * Create a new instance of the unit from a string.
+     *
+     * @param string $value
+     * @return Unit
+     */
     public static function from(string $value): Unit
     {
         $numberPart = (float) $value;
