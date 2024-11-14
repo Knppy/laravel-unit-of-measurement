@@ -74,10 +74,7 @@
         "laravel": {
             "providers": [
                 "Knppy\\UnitOfMeasurement\\UnitOfMeasurementServiceProvider"
-            ],
-            "aliases": {
-                "UnitOfMeasurement": "Knppy\\UnitOfMeasurement\\Facades\\UnitOfMeasurement"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",

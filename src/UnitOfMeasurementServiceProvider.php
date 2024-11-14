@@ -17,9 +17,6 @@ class UnitOfMeasurementServiceProvider extends PackageServiceProvider
          */
         $package
             ->name('laravel-unit-of-measurement')
-            ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel_unit_of_measurement_table')
-            ->hasCommand(UnitOfMeasurementCommand::class);
+            ->hasConfigFile();
     }
 }
