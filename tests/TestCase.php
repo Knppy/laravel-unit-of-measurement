@@ -3,8 +3,8 @@
 namespace Knppy\UnitOfMeasurement\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
 use Knppy\UnitOfMeasurement\UnitOfMeasurementServiceProvider;
+use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra
 {
