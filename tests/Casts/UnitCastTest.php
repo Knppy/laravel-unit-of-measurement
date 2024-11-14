@@ -2,8 +2,8 @@
 
 use Illuminate\Database\Eloquent\Model;
 use Knppy\UnitOfMeasurement\Casts\UnitCast;
-use Knppy\UnitOfMeasurement\Unit;
 use Knppy\UnitOfMeasurement\Measurement;
+use Knppy\UnitOfMeasurement\Unit;
 
 beforeEach(function () {
     $this->model = $this->getMockBuilder(Model::class)
@@ -13,7 +13,6 @@ beforeEach(function () {
 
 it('can get a measurement from a string', function () {
     $json = '{"value":1,"measurement":"gram"}';
-
 
     $this->assertEquals(new Unit(1, new Measurement('gram')), (new UnitCast)->get($this->model, '', $json, []));
 });
