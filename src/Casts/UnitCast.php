@@ -19,7 +19,7 @@ class UnitCast implements CastsAttributes
             throw new UnexpectedValueException;
         }
 
-        /** @var null|array{value:float, measurement:string} $value */
+        /** @var null|array $value */
         $value = json_decode($value, true);
         if (! is_array($value) || ! isset($value['value']) || ! isset($value['measurement'])) {
             throw new UnexpectedValueException;

@@ -37,6 +37,18 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
     private float $factor;
 
     /**
+     * Dynamically handle calls to the class.
+     */
+    public static function __callStatic($method, $parameters): Measurement
+    {
+        if (static::hasMacro($method)) {
+            return static::macroableCallStatic($method, $parameters);
+        }
+
+        return new self($method);
+    }
+
+    /**
      * Get the name of the caster class to use when casting from / to this cast target.
      */
     public static function castUsing(array $arguments): string
@@ -50,18 +62,6 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
     public static function measurements(): Collection
     {
         return self::$measurements ??= collect(config('unit-of-measurement.measurements', []));
-    }
-
-    /**
-     * Dynamically handle calls to the class.
-     */
-    public static function __callStatic($method, $parameters): Measurement
-    {
-        if (static::hasMacro($method)) {
-            return static::macroableCallStatic($method, $parameters);
-        }
-
-        return new self($method);
     }
 
     /**
