@@ -2,7 +2,6 @@
 
 namespace Knppy\UnitOfMeasurement;
 
-use Knppy\UnitOfMeasurement\Commands\UnitOfMeasurementCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
