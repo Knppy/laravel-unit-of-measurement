@@ -8,6 +8,12 @@ it('can be casted', function () {
     $this->assertSame(UnitCast::class, Unit::castUsing([]));
 });
 
+it ('can be constructed from expression', function() {
+    $unit = Unit::from('1 gram');
+
+    $this->assertEquals(new Unit(1, Measurement::gram()), $unit);
+});
+
 it('can be constructed', function () {
     $unit = new Unit(1, Measurement::gram());
 
