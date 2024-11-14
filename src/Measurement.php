@@ -3,16 +3,16 @@
 namespace Knppy\UnitOfMeasurement;
 
 use Illuminate\Support\Collection;
+use Knppy\UnitOfMeasurement\Enums\MeasurementType;
 use OutOfBoundsException;
 
 class Measurement
 {
     private static ?Collection $measurements = null;
 
+    private MeasurementType $type;
     private string $name;
-
     private string $symbol;
-
     private float $factor;
 
     /**
@@ -29,19 +29,28 @@ class Measurement
     public function __construct(string $measurement)
     {
         $measurements = self::measurements();
-        $measurementAttributes = $measurements->where('name', '=', $measurement)->first();
+        $measurementAttributes = $measurements->firstWhere('name', '=', $measurement);
 
-        if (! $measurementAttributes) {
-            $measurementAttributes = $measurements->where('symbol', '=', $measurement)->first();
+        if (!$measurementAttributes) {
+            $measurementAttributes = $measurements->firstWhere('symbol', '=', $measurement);
         }
 
-        if (! $measurementAttributes) {
-            throw new OutOfBoundsException('Invalid measurement "'.$measurement.'"');
+        if (!$measurementAttributes) {
+            throw new OutOfBoundsException('Invalid measurement "' . $measurement . '"');
         }
 
-        $this->name = (string) $measurementAttributes['name'];
-        $this->symbol = (string) $measurementAttributes['symbol'];
-        $this->factor = (float) $measurementAttributes['factor'];
+        $this->name = (string)$measurementAttributes['name'];
+        $this->type = MeasurementType::from($measurementAttributes['type']);
+        $this->symbol = (string)$measurementAttributes['symbol'];
+        $this->factor = (float)$measurementAttributes['factor'];
+    }
+
+    /**
+     * Get the factor.
+     */
+    public function getFactor(): float
+    {
+        return $this->factor;
     }
 
     /**
@@ -61,10 +70,12 @@ class Measurement
     }
 
     /**
-     * Get the factor.
+     * Get the type.
+     *
+     * @return MeasurementType
      */
-    public function getFactor(): float
+    public function getType(): MeasurementType
     {
-        return $this->factor;
+        return $this->type;
     }
 }

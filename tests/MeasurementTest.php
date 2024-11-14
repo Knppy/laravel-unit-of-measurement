@@ -1,5 +1,6 @@
 <?php
 
+use Knppy\UnitOfMeasurement\Enums\MeasurementType;
 use Knppy\UnitOfMeasurement\Measurement;
 
 it('can be constructed by name', function () {
@@ -17,6 +18,7 @@ it('can be constructed by symbol', function () {
 it('has getters', function () {
     $measurement = new Measurement('g');
 
+    $this->assertEquals(MeasurementType::MASS, $measurement->getType());
     $this->assertEquals('gram', $measurement->getName());
     $this->assertEquals('g', $measurement->getSymbol());
     $this->assertEquals(1, $measurement->getFactor());
