@@ -43,7 +43,7 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
 
     public static function from(string $value): Unit
     {
-        $numberPart = (float)$value;
+        $numberPart = (float) $value;
         $measurementPart = trim(str_replace((string) $numberPart, '', $value));
 
         return new self($numberPart, new Measurement($measurementPart));
