@@ -18,6 +18,7 @@ it('can be constructed by symbol', function () {
 it('has getters', function () {
     $measurement = new Measurement('g');
 
+    $this->assertNull($measurement->getBaseMeasurement());
     $this->assertEquals(MeasurementType::MASS, $measurement->getType());
     $this->assertEquals('gram', $measurement->getName());
     $this->assertEquals('g', $measurement->getSymbol());

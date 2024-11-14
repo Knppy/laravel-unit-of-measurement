@@ -10,6 +10,7 @@ return [
             'factor' => 1,
         ],
         [
+            'base_measurement' => 'gram',
             'type' => 'mass',
             'name' => 'kilogram',
             'symbol' => 'kg',

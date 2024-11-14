@@ -10,9 +10,14 @@ class Measurement
 {
     private static ?Collection $measurements = null;
 
+    private ?Measurement $baseMeasurement;
+
     private MeasurementType $type;
+
     private string $name;
+
     private string $symbol;
+
     private float $factor;
 
     /**
@@ -31,18 +36,27 @@ class Measurement
         $measurements = self::measurements();
         $measurementAttributes = $measurements->firstWhere('name', '=', $measurement);
 
-        if (!$measurementAttributes) {
+        if (! $measurementAttributes) {
             $measurementAttributes = $measurements->firstWhere('symbol', '=', $measurement);
         }
 
-        if (!$measurementAttributes) {
-            throw new OutOfBoundsException('Invalid measurement "' . $measurement . '"');
+        if (! $measurementAttributes) {
+            throw new OutOfBoundsException('Invalid measurement "'.$measurement.'"');
         }
 
-        $this->name = (string)$measurementAttributes['name'];
+        $this->baseMeasurement = isset($measurementAttributes['base_measurement']) ? new Measurement($measurementAttributes['base_measurement']) : null;
         $this->type = MeasurementType::from($measurementAttributes['type']);
-        $this->symbol = (string)$measurementAttributes['symbol'];
-        $this->factor = (float)$measurementAttributes['factor'];
+        $this->name = (string) $measurementAttributes['name'];
+        $this->symbol = (string) $measurementAttributes['symbol'];
+        $this->factor = (float) $measurementAttributes['factor'];
+    }
+
+    /**
+     * Get the base measurement.
+     */
+    public function getBaseMeasurement(): ?Measurement
+    {
+        return $this->baseMeasurement;
     }
 
     /**
@@ -71,8 +85,6 @@ class Measurement
 
     /**
      * Get the type.
-     *
-     * @return MeasurementType
      */
     public function getType(): MeasurementType
     {
