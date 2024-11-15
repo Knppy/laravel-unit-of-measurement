@@ -8,7 +8,6 @@ use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Traits\Macroable;
 use JsonSerializable;
-use Knppy\UnitOfMeasurement\Measurement;
 use Knppy\UnitOfMeasurement\Behaviour\Calculatable;
 use Knppy\UnitOfMeasurement\Behaviour\Comparable;
 use Knppy\UnitOfMeasurement\Behaviour\Convertable;
