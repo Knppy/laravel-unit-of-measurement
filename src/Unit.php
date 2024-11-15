@@ -26,6 +26,11 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
     }
 
     /**
+     * Stores whether the unit is mutable or not.
+     */
+    private bool $mutable = false;
+
+    /**
      * Dynamically handle calls to the class.
      */
     public static function __callStatic($method, $parameters): Unit
@@ -89,11 +94,49 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
     }
 
     /**
+     * Make the unit immutable.
+     */
+    public function immutable(): Unit
+    {
+        $this->mutable = false;
+
+        return new self($this->getValue(), $this->getMeasurement());
+    }
+
+    /**
+     * Determine if the unit is mutable.
+     */
+    public function isMutable(): bool
+    {
+        return $this->mutable === true;
+    }
+
+    /**
+     * Determine if the unit is immutable.
+     */
+    public function isImmutable(): bool
+    {
+        return ! $this->isMutable();
+    }
+
+    /**
      * Specify data which should be serialized to JSON.
      */
     public function jsonSerialize(): array
     {
         return $this->toArray();
+    }
+
+    /**
+     * Make the unit mutable.
+     *
+     * @return $this
+     */
+    public function mutable(): Unit
+    {
+        $this->mutable = true;
+
+        return $this;
     }
 
     /**

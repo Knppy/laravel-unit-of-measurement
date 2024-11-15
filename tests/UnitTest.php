@@ -40,6 +40,13 @@ it('can be converted to string', function () {
     $this->assertIsString($unit->render());
 });
 
+it ('can be made mutable', function() {
+    $unit = (new Unit(1, Measurement::gram()))->immutable();
+
+    $this->assertTrue($unit->isImmutable());
+    $this->assertFalse($unit->mutable()->isImmutable());
+});
+
 it('has factory methods', function () {
     $this->assertEquals(Unit::gram(), new Unit(1, new Measurement('gram')));
     $this->assertEquals(Unit::kilogram(), new Unit(1, new Measurement('kilogram')));
