@@ -51,7 +51,7 @@ it('equals another measurement', function () {
 it('equals another measurements type', function () {
     $measurement = new Measurement('g');
     $measurement2 = new Measurement('kg');
-    $measurement3 = new Measurement('m3');
+    $measurement3 = new Measurement('m³');
 
     $this->assertTrue($measurement->equalsType($measurement2));
     $this->assertFalse($measurement->equalsType($measurement3));

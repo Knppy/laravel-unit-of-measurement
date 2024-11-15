@@ -8,6 +8,7 @@ use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Traits\Macroable;
 use JsonSerializable;
+use Knppy\UnitOfMeasurement\Measurement;
 use Knppy\UnitOfMeasurement\Behaviour\Calculatable;
 use Knppy\UnitOfMeasurement\Behaviour\Comparable;
 use Knppy\UnitOfMeasurement\Behaviour\Convertable;
@@ -101,7 +102,7 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
             return static::macroableCallStatic($method, $parameters);
         }
 
-        return new self($parameters[0] ?? 1, new Measurement($method));
+        return new self(($parameters[0] ?? 1), new Measurement($method));
     }
 
     /**

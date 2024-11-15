@@ -1,6 +1,6 @@
 <?php
 
-namespace Knppy\UnitOfUnit;
+namespace Knppy\UnitOfMeasurement;
 
 use Illuminate\Contracts\Database\Eloquent\Castable;
 use Illuminate\Contracts\Support\Arrayable;
@@ -9,74 +9,74 @@ use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Traits\Macroable;
 use JsonSerializable;
-use Knppy\UnitOfUnit\Casts\UnitCast;
-use Knppy\UnitOfUnit\Enums\UnitType;
+use Knppy\UnitOfMeasurement\Casts\MeasurementCast;
+use Knppy\UnitOfMeasurement\Enums\MeasurementType;
 use OutOfBoundsException;
 
 /**
- * @method static Unit yottagram()
- * @method static Unit zettagram()
- * @method static Unit exagram()
- * @method static Unit petagram()
- * @method static Unit teragram()
- * @method static Unit gigagram()
- * @method static Unit megagram()
- * @method static Unit kilogram()
- * @method static Unit hectogram()
- * @method static Unit decagram()
- * @method static Unit gram()
- * @method static Unit decigram()
- * @method static Unit centigram()
- * @method static Unit milligram()
- * @method static Unit microgram()
- * @method static Unit nanogram()
- * @method static Unit picogram()
- * @method static Unit femtogram()
- * @method static Unit attogram()
- * @method static Unit zeptogram()
- * @method static Unit yoctogram()
- * @method static Unit cubicYottameter()
- * @method static Unit cubicZettameter()
- * @method static Unit cubicExameter()
- * @method static Unit cubicPetameter()
- * @method static Unit cubicTerameter()
- * @method static Unit cubicGigameter()
- * @method static Unit cubicMegameter()
- * @method static Unit cubicKilometer()
- * @method static Unit cubicMeter()
- * @method static Unit cubicDecimeter()
- * @method static Unit cubicCentimeter()
- * @method static Unit cubicMillimeter()
- * @method static Unit cubicMicrometer()
- * @method static Unit cubicNanometer()
- * @method static Unit cubicPicometer()
- * @method static Unit cubicFemtometer()
- * @method static Unit cubicAttometer()
- * @method static Unit cubicZeptometer()
- * @method static Unit cubicYoctometer()
- * @method static Unit yottaLiter()
- * @method static Unit zettaLiter()
- * @method static Unit exaLiter()
- * @method static Unit petaLiter()
- * @method static Unit teraLiter()
- * @method static Unit gigaLiter()
- * @method static Unit megaLiter()
- * @method static Unit kiloLiter()
- * @method static Unit hectoLiter()
- * @method static Unit decaLiter()
- * @method static Unit liter()
- * @method static Unit deciLiter()
- * @method static Unit centiLiter()
- * @method static Unit milliLiter()
- * @method static Unit microLiter()
- * @method static Unit nanoLiter()
- * @method static Unit picoLiter()
- * @method static Unit femtoLiter()
- * @method static Unit attoLiter()
- * @method static Unit zeptoLiter()
- * @method static Unit yoctoLiter()
+ * @method static Measurement yottagram()
+ * @method static Measurement zettagram()
+ * @method static Measurement exagram()
+ * @method static Measurement petagram()
+ * @method static Measurement teragram()
+ * @method static Measurement gigagram()
+ * @method static Measurement megagram()
+ * @method static Measurement kilogram()
+ * @method static Measurement hectogram()
+ * @method static Measurement decagram()
+ * @method static Measurement gram()
+ * @method static Measurement decigram()
+ * @method static Measurement centigram()
+ * @method static Measurement milligram()
+ * @method static Measurement microgram()
+ * @method static Measurement nanogram()
+ * @method static Measurement picogram()
+ * @method static Measurement femtogram()
+ * @method static Measurement attogram()
+ * @method static Measurement zeptogram()
+ * @method static Measurement yoctogram()
+ * @method static Measurement cubicYottameter()
+ * @method static Measurement cubicZettameter()
+ * @method static Measurement cubicExameter()
+ * @method static Measurement cubicPetameter()
+ * @method static Measurement cubicTerameter()
+ * @method static Measurement cubicGigameter()
+ * @method static Measurement cubicMegameter()
+ * @method static Measurement cubicKilometer()
+ * @method static Measurement cubicMeter()
+ * @method static Measurement cubicDecimeter()
+ * @method static Measurement cubicCentimeter()
+ * @method static Measurement cubicMillimeter()
+ * @method static Measurement cubicMicrometer()
+ * @method static Measurement cubicNanometer()
+ * @method static Measurement cubicPicometer()
+ * @method static Measurement cubicFemtometer()
+ * @method static Measurement cubicAttometer()
+ * @method static Measurement cubicZeptometer()
+ * @method static Measurement cubicYoctometer()
+ * @method static Measurement yottaLiter()
+ * @method static Measurement zettaLiter()
+ * @method static Measurement exaLiter()
+ * @method static Measurement petaLiter()
+ * @method static Measurement teraLiter()
+ * @method static Measurement gigaLiter()
+ * @method static Measurement megaLiter()
+ * @method static Measurement kiloLiter()
+ * @method static Measurement hectoLiter()
+ * @method static Measurement decaLiter()
+ * @method static Measurement liter()
+ * @method static Measurement deciLiter()
+ * @method static Measurement centiLiter()
+ * @method static Measurement milliLiter()
+ * @method static Measurement microLiter()
+ * @method static Measurement nanoLiter()
+ * @method static Measurement picoLiter()
+ * @method static Measurement femtoLiter()
+ * @method static Measurement attoLiter()
+ * @method static Measurement zeptoLiter()
+ * @method static Measurement yoctoLiter()
  */
-class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderable
+class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Renderable
 {
     use Macroable {
         __callStatic as protected macroableCallStatic;
@@ -84,9 +84,9 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
 
     private static ?Collection $measurements = null;
 
-    private ?Unit $baseUnit;
+    private ?Measurement $baseMeasurement;
 
-    private UnitType $type;
+    private MeasurementType $type;
 
     private string $name;
 
@@ -97,7 +97,7 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
     /**
      * Dynamically handle calls to the class.
      */
-    public static function __callStatic($method, $parameters): Unit
+    public static function __callStatic($method, $parameters): Measurement
     {
         if (static::hasMacro($method)) {
             return static::macroableCallStatic($method, $parameters);
@@ -111,7 +111,7 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
      */
     public static function castUsing(array $arguments): string
     {
-        return UnitCast::class;
+        return MeasurementCast::class;
     }
 
     /**
@@ -138,8 +138,8 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
             throw new OutOfBoundsException('Invalid measurement "'.$measurement.'"');
         }
 
-        $this->baseUnit = isset($measurementAttributes['base_measurement']) ? new Unit($measurementAttributes['base_measurement']) : null;
-        $this->type = UnitType::from($measurementAttributes['type']);
+        $this->baseMeasurement = isset($measurementAttributes['base_measurement']) ? new Measurement($measurementAttributes['base_measurement']) : null;
+        $this->type = MeasurementType::from($measurementAttributes['type']);
         $this->name = (string) $measurementAttributes['name'];
         $this->symbol = (string) $measurementAttributes['symbol'];
         $this->factor = (float) $measurementAttributes['factor'];
@@ -156,7 +156,7 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
     /**
      * Determine if this measurement is equal to another measurement.
      */
-    public function equals(Unit $measurement): bool
+    public function equals(Measurement $measurement): bool
     {
         return $this->getName() === $measurement->getName();
     }
@@ -164,7 +164,7 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
     /**
      * Determine if this measurement is of the same type as another measurement.
      */
-    public function equalsType(Unit $measurement): bool
+    public function equalsType(Measurement $measurement): bool
     {
         return $this->getType()->name === $measurement->getType()->name;
     }
@@ -172,9 +172,9 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
     /**
      * Get the base measurement.
      */
-    public function getBaseUnit(): ?Unit
+    public function getBaseMeasurement(): ?Measurement
     {
-        return $this->baseUnit;
+        return $this->baseMeasurement;
     }
 
     /**
@@ -204,7 +204,7 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
     /**
      * Get the type.
      */
-    public function getType(): UnitType
+    public function getType(): MeasurementType
     {
         return $this->type;
     }
@@ -231,7 +231,7 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
     public function toArray(): array
     {
         return [
-            'base_measurement' => $this->getBaseUnit(),
+            'base_measurement' => $this->getBaseMeasurement(),
             'type' => $this->getType(),
             'name' => $this->getName(),
             'symbol' => $this->getSymbol(),
