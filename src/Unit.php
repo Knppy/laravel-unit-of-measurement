@@ -9,6 +9,7 @@ use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Traits\Macroable;
 use JsonSerializable;
 use Knppy\UnitOfMeasurement\Behaviour\Comparable;
+use Knppy\UnitOfMeasurement\Behaviour\Formatable;
 use Knppy\UnitOfMeasurement\Casts\UnitCast;
 
 /**
@@ -19,6 +20,7 @@ use Knppy\UnitOfMeasurement\Casts\UnitCast;
 class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderable
 {
     use Comparable;
+    use Formatable;
     use Macroable {
         __callStatic as protected macroableCallStatic;
     }
@@ -120,6 +122,6 @@ class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderabl
      */
     public function render(): string
     {
-        return (string) $this->value;
+        return $this->format();
     }
 }
