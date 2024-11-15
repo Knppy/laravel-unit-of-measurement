@@ -23,7 +23,7 @@ it('can add on mutable unit', function () {
     $this->assertNotEquals(Unit::gram(2200.122)->mutable(), $unit2);
 });
 
-it ('can divide', function() {
+it('can divide', function () {
     $unit1 = new Unit(2, new Measurement('gram'));
     $unit2 = new Unit(10, new Measurement('gram'));
 
@@ -31,7 +31,7 @@ it ('can divide', function() {
     $this->assertNotEquals($unit1, $unit2->divide(2));
 });
 
-it ('can divide on mutable unit', function() {
+it('can divide on mutable unit', function () {
     $unit = Unit::gram(2);
     $unit2 = Unit::gram(10)->mutable();
 
@@ -41,7 +41,7 @@ it ('can divide on mutable unit', function() {
     $this->assertTrue($unit2->equals($unit));
 });
 
-it ('can multiply', function() {
+it('can multiply', function () {
     $unit1 = new Unit(15, new Measurement('gram'));
     $unit2 = new Unit(1, new Measurement('gram'));
 
@@ -49,7 +49,7 @@ it ('can multiply', function() {
     $this->assertNotEquals($unit1, $unit2->multiply(10));
 });
 
-it ('can multiply on mutable unit', function() {
+it('can multiply on mutable unit', function () {
     $unit1 = Unit::gram(15);
     $unit2 = Unit::gram(1)->mutable();
 
@@ -59,7 +59,7 @@ it ('can multiply on mutable unit', function() {
     $this->assertTrue($unit2->equals($unit1));
 });
 
-it ('can subtract', function() {
+it('can subtract', function () {
     $unit1 = new Unit(100.10, new Measurement('gram'));
     $unit2 = new Unit(100.02, new Measurement('gram'));
     $diff = $unit1->subtract($unit2);
@@ -69,7 +69,7 @@ it ('can subtract', function() {
     $this->assertNotSame($diff, $unit2);
 });
 
-it ('can subtract on mutable unit', function() {
+it('can subtract on mutable unit', function () {
     $unit1 = Unit::gram(100.10)->mutable();
     $unit2 = Unit::gram(100.02);
 
@@ -79,20 +79,20 @@ it ('can subtract on mutable unit', function() {
     $this->assertNotEquals(Unit::gram(0.0799999999999983)->mutable(), $unit2);
 });
 
-it ('throws exception if addend has different measurements', function() {
+it('throws exception if addend has different measurements', function () {
     $unit1 = new Unit(100, new Measurement('gram'));
     $unit2 = new Unit(100, new Measurement('kilogram'));
 
     $unit1->add($unit2);
 })->expectException(InvalidArgumentException::class);
 
-it ('throws exception if divisor is zero', function() {
+it('throws exception if divisor is zero', function () {
     $unit1 = new Unit(100, new Measurement('gram'));
 
     $unit1->divide(0);
 })->expectException(InvalidArgumentException::class);
 
-it ('throws exception if subtrahend has different measurements', function() {
+it('throws exception if subtrahend has different measurements', function () {
     $unit1 = new Unit(100, new Measurement('gram'));
     $unit2 = new Unit(100, new Measurement('kilogram'));
 
