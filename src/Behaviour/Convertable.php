@@ -21,9 +21,6 @@ trait Convertable
 
     /**
      * Convert the unit to another unit.
-     *
-     * @param string|Measurement|Unit $unit
-     * @return Unit
      */
     public function to(string|Measurement|Unit $unit): Unit
     {
