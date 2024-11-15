@@ -40,7 +40,7 @@ it('can be converted to string', function () {
     $this->assertIsString($unit->render());
 });
 
-it ('can be made mutable', function() {
+it('can be made mutable', function () {
     $unit = (new Unit(1, Measurement::gram()))->immutable();
 
     $this->assertTrue($unit->isImmutable());
