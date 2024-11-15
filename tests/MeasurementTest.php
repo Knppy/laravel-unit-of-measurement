@@ -65,11 +65,11 @@ it('has factory methods', function () {
 it('has getters', function () {
     $measurement = new Measurement('g');
 
-    $this->assertNull($measurement->getBaseMeasurement());
+    $this->assertEquals(Measurement::kilogram(), $measurement->getBaseMeasurement());
     $this->assertEquals(MeasurementType::MASS, $measurement->getType());
     $this->assertEquals('gram', $measurement->getName());
     $this->assertEquals('g', $measurement->getSymbol());
-    $this->assertEquals(1, $measurement->getFactor());
+    $this->assertEquals(0.001, $measurement->getFactor());
 });
 
 it('has macros', function () {
