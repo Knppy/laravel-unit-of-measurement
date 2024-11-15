@@ -7,7 +7,6 @@ use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Traits\Macroable;
-use InvalidArgumentException;
 use JsonSerializable;
 use Knppy\UnitOfMeasurement\Behaviour\Comparable;
 use Knppy\UnitOfMeasurement\Casts\UnitCast;
