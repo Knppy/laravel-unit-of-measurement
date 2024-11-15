@@ -8,6 +8,7 @@ use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Traits\Macroable;
 use JsonSerializable;
+use Knppy\UnitOfMeasurement\Behaviour\Calculatable;
 use Knppy\UnitOfMeasurement\Behaviour\Comparable;
 use Knppy\UnitOfMeasurement\Behaviour\Formatable;
 use Knppy\UnitOfMeasurement\Casts\UnitCast;
@@ -19,6 +20,7 @@ use Knppy\UnitOfMeasurement\Casts\UnitCast;
  */
 class Unit implements Arrayable, Castable, Jsonable, JsonSerializable, Renderable
 {
+    use Calculatable;
     use Comparable;
     use Formatable;
     use Macroable {
