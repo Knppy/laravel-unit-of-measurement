@@ -572,22 +572,22 @@ return [
             'name' => 'celsius',
             'symbol' => '°C',
             'factor' => 1,
-            'pre_addition' => 273.15
+            'pre_addition' => 273.15,
         ],
         [
             'base_measurement' => 'kelvin',
             'type' => 'temperature',
             'name' => 'fahrenheit',
             'symbol' => '°F',
-            'factor' => 5/9,
-            'pre_addition' => 459.67
+            'factor' => 5 / 9,
+            'pre_addition' => 459.67,
         ],
         [
             'base_measurement' => 'kelvin',
             'type' => 'temperature',
             'name' => 'rankine',
             'symbol' => '°R',
-            'factor' => 5/9,
+            'factor' => 5 / 9,
         ],
         [
             'type' => 'temperature',
@@ -601,7 +601,7 @@ return [
             'name' => 'romer',
             'symbol' => '°Rø',
             'post_addition' => 273.15,
-            'factor' => 40/21,
+            'factor' => 40 / 21,
             'pre_addition' => -7.5,
         ],
 

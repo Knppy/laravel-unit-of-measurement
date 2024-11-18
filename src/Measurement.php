@@ -266,8 +266,6 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
 
     /**
      * Get the pre addition.
-     *
-     * @return float
      */
     public function getPreAddition(): float
     {
@@ -276,8 +274,6 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
 
     /**
      * Get the post addition.
-     *
-     * @return float
      */
     public function getPostAddition(): float
     {

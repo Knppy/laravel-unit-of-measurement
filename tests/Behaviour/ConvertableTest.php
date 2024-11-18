@@ -7,7 +7,7 @@ it('can convert from base value', function () {
     $this->assertEquals(1000, Unit::gram()->fromBaseValue(1));
 });
 
-it('can convert from base value with pre and post addition', function() {
+it('can convert from base value with pre and post addition', function () {
     // Round them to prevent a lot of decimals
     $this->assertEquals(1, round(Unit::romer()->fromBaseValue(260.769047619048)));
 });
@@ -27,6 +27,6 @@ it('can convert to base unit', function () {
     $this->assertEquals(Unit::kilogram(), Unit::kilogram()->toBaseUnit());
 });
 
-it ('can convert to base unit with pre and post addition', function() {
+it('can convert to base unit with pre and post addition', function () {
     $this->assertEquals(260.76904761904757, Unit::romer()->toBaseValue());
 });

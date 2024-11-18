@@ -96,13 +96,11 @@ use Knppy\UnitOfMeasurement\Casts\UnitCast;
  * @method static Unit attogram(float $value = 1)
  * @method static Unit zeptogram(float $value = 1)
  * @method static Unit yoctogram(float $value = 1)
- *
  * @method static Unit celsius(float $value = 1)
  * @method static Unit fahrenheit(float $value = 1)
  * @method static Unit rankine(float $value = 1)
  * @method static Unit kelvin(float $value = 1)
  * @method static Unit romer(float $value = 1)
- *
  * @method static Unit cubicYottameter(float $value = 1)
  * @method static Unit cubicZettameter(float $value = 1)
  * @method static Unit cubicExameter(float $value = 1)
