@@ -155,6 +155,140 @@ return [
             'symbol' => 'qty',
             'factor' => 1, // Base unit of the volume
         ],
+
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'yottaSquareMeter',
+            'symbol' => 'Ym²',
+            'factor' => 1E48, // (10^24)^2 = 10^48
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'zettaSquareMeter',
+            'symbol' => 'Zm²',
+            'factor' => 1E42, // (10^21)^2 = 10^42
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'exaSquareMeter',
+            'symbol' => 'Em²',
+            'factor' => 1E36, // (10^18)^2 = 10^36
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'petaSquareMeter',
+            'symbol' => 'Pm²',
+            'factor' => 1E30, // (10^15)^2 = 10^30
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'teraSquareMeter',
+            'symbol' => 'Tm²',
+            'factor' => 1E24, // (10^12)^2 = 10^24
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'gigaSquareMeter',
+            'symbol' => 'Gm²',
+            'factor' => 1E18, // (10^9)^2 = 10^18
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'megaSquareMeter',
+            'symbol' => 'Mm²',
+            'factor' => 1E12, // (10^6)^2 = 10^12
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'kiloSquareMeter',
+            'symbol' => 'km²',
+            'factor' => 1E6, // (10^3)^2 = 10^6
+        ],
+        [
+            'type' => 'area',
+            'name' => 'squareMeter',
+            'symbol' => 'm²',
+            'factor' => 1, // Base unit of area
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'deciSquareMeter',
+            'symbol' => 'dm²',
+            'factor' => 1E-2, // (10^-1)^2 = 10^-2
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'centiSquareMeter',
+            'symbol' => 'cm²',
+            'factor' => 1E-4, // (10^-2)^2 = 10^-4
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'milliSquareMeter',
+            'symbol' => 'mm²',
+            'factor' => 1E-6, // (10^-3)^2 = 10^-6
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'microSquareMeter',
+            'symbol' => 'µm²',
+            'factor' => 1E-12, // (10^-6)^2 = 10^-12
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'nanoSquareMeter',
+            'symbol' => 'nm²',
+            'factor' => 1E-18, // (10^-9)^2 = 10^-18
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'picoSquareMeter',
+            'symbol' => 'pm²',
+            'factor' => 1E-24, // (10^-12)^2 = 10^-24
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'femtoSquareMeter',
+            'symbol' => 'fm²',
+            'factor' => 1E-30, // (10^-15)^2 = 10^-30
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'attoSquareMeter',
+            'symbol' => 'am²',
+            'factor' => 1E-36, // (10^-18)^2 = 10^-36
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'zeptoSquareMeter',
+            'symbol' => 'zm²',
+            'factor' => 1E-42, // (10^-21)^2 = 10^-42
+        ],
+        [
+            'base_measurement' => 'square meter',
+            'type' => 'area',
+            'name' => 'yoctoSquareMeter',
+            'symbol' => 'ym²',
+            'factor' => 1E-48, // (10^-24)^2 = 10^-48
+        ],
+
         [
             'base_measurement' => 'meter',
             'type' => 'length',
