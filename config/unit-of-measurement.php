@@ -156,6 +156,138 @@ return [
             'factor' => 1, // Base unit of the volume
         ],
         [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'yottameter',
+            'symbol' => 'Ym',
+            'factor' => 1E24, // 1 Ym = 10^24 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'zettameter',
+            'symbol' => 'Zm',
+            'factor' => 1E21, // 1 Zm = 10^21 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'exameter',
+            'symbol' => 'Em',
+            'factor' => 1E18, // 1 Em = 10^18 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'petameter',
+            'symbol' => 'Pm',
+            'factor' => 1E15, // 1 Pm = 10^15 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'terameter',
+            'symbol' => 'Tm',
+            'factor' => 1E12, // 1 Tm = 10^12 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'gigameter',
+            'symbol' => 'Gm',
+            'factor' => 1E9, // 1 Gm = 10^9 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'megameter',
+            'symbol' => 'Mm',
+            'factor' => 1E6, // 1 Mm = 10^6 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'kilometer',
+            'symbol' => 'km',
+            'factor' => 1E3, // 1 km = 10^3 m
+        ],
+        [
+            'type' => 'length',
+            'name' => 'meter',
+            'symbol' => 'm',
+            'factor' => 1, // Base unit of length
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'decimeter',
+            'symbol' => 'dm',
+            'factor' => 1E-1, // 1 dm = 0.1 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'centimeter',
+            'symbol' => 'cm',
+            'factor' => 1E-2, // 1 cm = 0.01 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'millimeter',
+            'symbol' => 'mm',
+            'factor' => 1E-3, // 1 mm = 0.001 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'micrometer',
+            'symbol' => 'µm',
+            'factor' => 1E-6, // 1 µm = 0.000001 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'nanometer',
+            'symbol' => 'nm',
+            'factor' => 1E-9, // 1 nm = 0.000000001 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'picometer',
+            'symbol' => 'pm',
+            'factor' => 1E-12, // 1 pm = 0.000000000001 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'femtometer',
+            'symbol' => 'fm',
+            'factor' => 1E-15, // 1 fm = 0.000000000000001 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'attometer',
+            'symbol' => 'am',
+            'factor' => 1E-18, // 1 am = 0.000000000000000001 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'zeptometer',
+            'symbol' => 'zm',
+            'factor' => 1E-21, // 1 zm = 0.000000000000000000001 m
+        ],
+        [
+            'base_measurement' => 'meter',
+            'type' => 'length',
+            'name' => 'yoctometer',
+            'symbol' => 'ym',
+            'factor' => 1E-24, // 1 ym = 0.000000000000000000000001 m
+        ],
+        [
             'base_measurement' => 'kilogram',
             'type' => 'mass',
             'name' => 'yottagram',
