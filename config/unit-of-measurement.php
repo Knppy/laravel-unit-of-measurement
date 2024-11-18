@@ -155,7 +155,6 @@ return [
             'symbol' => 'qty',
             'factor' => 1, // Base unit of the volume
         ],
-
         [
             'base_measurement' => 'square meter',
             'type' => 'area',
@@ -288,7 +287,6 @@ return [
             'symbol' => 'ym²',
             'factor' => 1E-48, // (10^-24)^2 = 10^-48
         ],
-
         [
             'base_measurement' => 'meter',
             'type' => 'length',
@@ -567,6 +565,46 @@ return [
             'symbol' => 'yg',
             'factor' => 1E-27, // 1 yg = 0.000000000000000000000001 g = 0.000000000000000000000000001 kg
         ],
+
+        [
+            'base_measurement' => 'kelvin',
+            'type' => 'temperature',
+            'name' => 'celsius',
+            'symbol' => '°C',
+            'factor' => 1,
+            'pre_addition' => 273.15
+        ],
+        [
+            'base_measurement' => 'kelvin',
+            'type' => 'temperature',
+            'name' => 'fahrenheit',
+            'symbol' => '°F',
+            'factor' => 5/9,
+            'pre_addition' => 459.67
+        ],
+        [
+            'base_measurement' => 'kelvin',
+            'type' => 'temperature',
+            'name' => 'rankine',
+            'symbol' => '°R',
+            'factor' => 5/9,
+        ],
+        [
+            'type' => 'temperature',
+            'name' => 'kelvin',
+            'symbol' => 'K',
+            'factor' => 1, // Base unit
+        ],
+        [
+            'base_measurement' => 'kelvin',
+            'type' => 'temperature',
+            'name' => 'romer',
+            'symbol' => '°Rø',
+            'post_addition' => 273.15,
+            'factor' => 40/21,
+            'pre_addition' => -7.5,
+        ],
+
         [
             'base_measurement' => 'cubicMeter',
             'type' => 'volume',

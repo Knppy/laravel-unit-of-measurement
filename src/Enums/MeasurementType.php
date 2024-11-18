@@ -8,5 +8,6 @@ enum MeasurementType: string
     case AREA = 'area';
     case LENGTH = 'length';
     case MASS = 'mass';
+    case TEMPERATURE = 'temperature';
     case VOLUME = 'volume';
 }

@@ -95,6 +95,11 @@ use OutOfBoundsException;
  * @method static Measurement attogram()
  * @method static Measurement zeptogram()
  * @method static Measurement yoctogram()
+ * @method static Measurement celsius()
+ * @method static Measurement fahrenheit()
+ * @method static Measurement rankine()
+ * @method static Measurement kelvin()
+ * @method static Measurement romer()
  * @method static Measurement cubicYottameter()
  * @method static Measurement cubicZettameter()
  * @method static Measurement cubicExameter()
@@ -152,7 +157,11 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
 
     private string $symbol;
 
+    private float $preAddition;
+
     private float $factor;
+
+    private float $postAddition;
 
     /**
      * Dynamically handle calls to the class.
@@ -202,7 +211,9 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
         $this->type = MeasurementType::from($measurementAttributes['type']);
         $this->name = (string) $measurementAttributes['name'];
         $this->symbol = (string) $measurementAttributes['symbol'];
+        $this->preAddition = (float) ($measurementAttributes['pre_addition'] ?? 0);
         $this->factor = (float) $measurementAttributes['factor'];
+        $this->postAddition = (float) ($measurementAttributes['post_addition'] ?? 0);
     }
 
     /**
@@ -251,6 +262,26 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
     public function getName(): string
     {
         return $this->name;
+    }
+
+    /**
+     * Get the pre addition.
+     *
+     * @return float
+     */
+    public function getPreAddition(): float
+    {
+        return $this->preAddition;
+    }
+
+    /**
+     * Get the post addition.
+     *
+     * @return float
+     */
+    public function getPostAddition(): float
+    {
+        return $this->postAddition;
     }
 
     /**

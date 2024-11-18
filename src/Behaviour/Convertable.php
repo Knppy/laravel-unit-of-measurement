@@ -14,7 +14,9 @@ trait Convertable
     {
         $value = $baseValue;
 
+        $value -= $this->getMeasurement()->getPostAddition();
         $value /= $this->getMeasurement()->getFactor();
+        $value -= $this->getMeasurement()->getPreAddition();
 
         return $value;
     }
@@ -47,7 +49,9 @@ trait Convertable
             $value = $this->getValue();
         }
 
+        $value += $this->getMeasurement()->getPreAddition();
         $value *= $this->getMeasurement()->getFactor();
+        $value += $this->getMeasurement()->getPostAddition();
 
         return $value;
     }
