@@ -37,7 +37,6 @@ use Knppy\UnitOfMeasurement\Casts\UnitCast;
  * @method static Unit zeptomole(float $value = 1)
  * @method static Unit yoctomole(float $value = 1)
  * @method static Unit quantity(float $value = 1)
- *
  * @method static Unit yottaSquareMeter(float $value = 1)
  * @method static Unit zettaSquareMeter(float $value = 1)
  * @method static Unit exaSquareMeter(float $value = 1)
@@ -57,7 +56,6 @@ use Knppy\UnitOfMeasurement\Casts\UnitCast;
  * @method static Unit attoSquareMeter(float $value = 1)
  * @method static Unit zeptoSquareMeter(float $value = 1)
  * @method static Unit yoctoSquareMeter(float $value = 1)
- *
  * @method static Unit yottameter(float $value = 1)
  * @method static Unit zettameter(float $value = 1)
  * @method static Unit exameter(float $value = 1)
@@ -77,7 +75,6 @@ use Knppy\UnitOfMeasurement\Casts\UnitCast;
  * @method static Unit attometer(float $value = 1)
  * @method static Unit zeptometer(float $value = 1)
  * @method static Unit yoctometer(float $value = 1)
- *
  * @method static Unit yottagram(float $value = 1)
  * @method static Unit zettagram(float $value = 1)
  * @method static Unit exagram(float $value = 1)
@@ -99,7 +96,6 @@ use Knppy\UnitOfMeasurement\Casts\UnitCast;
  * @method static Unit attogram(float $value = 1)
  * @method static Unit zeptogram(float $value = 1)
  * @method static Unit yoctogram(float $value = 1)
- *
  * @method static Unit cubicYottameter(float $value = 1)
  * @method static Unit cubicZettameter(float $value = 1)
  * @method static Unit cubicExameter(float $value = 1)
@@ -119,7 +115,6 @@ use Knppy\UnitOfMeasurement\Casts\UnitCast;
  * @method static Unit cubicAttometer(float $value = 1)
  * @method static Unit cubicZeptometer(float $value = 1)
  * @method static Unit cubicYoctometer(float $value = 1)
- *
  * @method static Unit yottaLiter(float $value = 1)
  * @method static Unit zettaLiter(float $value = 1)
  * @method static Unit exaLiter(float $value = 1)

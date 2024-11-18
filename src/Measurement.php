@@ -36,7 +36,6 @@ use OutOfBoundsException;
  * @method static Measurement zeptomole()
  * @method static Measurement yoctomole()
  * @method static Measurement quantity()
- *
  * @method static Measurement yottaSquareMeter()
  * @method static Measurement zettaSquareMeter()
  * @method static Measurement exaSquareMeter()
@@ -56,7 +55,6 @@ use OutOfBoundsException;
  * @method static Measurement attoSquareMeter()
  * @method static Measurement zeptoSquareMeter()
  * @method static Measurement yoctoSquareMeter()
- *
  * @method static Measurement yottameter()
  * @method static Measurement zettameter()
  * @method static Measurement exameter()
@@ -76,7 +74,6 @@ use OutOfBoundsException;
  * @method static Measurement attometer()
  * @method static Measurement zeptometer()
  * @method static Measurement yoctometer()
- *
  * @method static Measurement yottagram()
  * @method static Measurement zettagram()
  * @method static Measurement exagram()
@@ -98,7 +95,6 @@ use OutOfBoundsException;
  * @method static Measurement attogram()
  * @method static Measurement zeptogram()
  * @method static Measurement yoctogram()
- *
  * @method static Measurement cubicYottameter()
  * @method static Measurement cubicZettameter()
  * @method static Measurement cubicExameter()
@@ -118,7 +114,6 @@ use OutOfBoundsException;
  * @method static Measurement cubicAttometer()
  * @method static Measurement cubicZeptometer()
  * @method static Measurement cubicYoctometer()
- *
  * @method static Measurement yottaLiter()
  * @method static Measurement zettaLiter()
  * @method static Measurement exaLiter()
