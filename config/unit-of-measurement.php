@@ -4,6 +4,158 @@
 return [
     'measurements' => [
         [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'yottamole',
+            'symbol' => 'Ymol',
+            'factor' => 1E24, // 1 Ymol = 10^24 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'zettamole',
+            'symbol' => 'Zmol',
+            'factor' => 1E21, // 1 Zmol = 10^21 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'examole',
+            'symbol' => 'Emol',
+            'factor' => 1E18, // 1 Emol = 10^18 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'petamole',
+            'symbol' => 'Pmol',
+            'factor' => 1E15, // 1 Pmol = 10^15 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'teramole',
+            'symbol' => 'Tmol',
+            'factor' => 1E12, // 1 Tmol = 10^12 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'gigamole',
+            'symbol' => 'Gmol',
+            'factor' => 1E9, // 1 Gmol = 10^9 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'megamole',
+            'symbol' => 'Mmol',
+            'factor' => 1E6, // 1 Mmol = 10^6 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'kilomole',
+            'symbol' => 'kmol',
+            'factor' => 1E3, // 1 kmol = 10^3 mol
+        ],
+        [
+            'type' => 'amount',
+            'name' => 'mole',
+            'symbol' => 'mol',
+            'factor' => 1, // Base unit of amount
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'hectomole',
+            'symbol' => 'hmol',
+            'factor' => 1E2, // 1 hmol = 100 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'decamole',
+            'symbol' => 'damol',
+            'factor' => 1E1, // 1 damol = 10 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'decimole',
+            'symbol' => 'dmol',
+            'factor' => 1E-1, // 1 dmol = 0.1 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'centimole',
+            'symbol' => 'cmol',
+            'factor' => 1E-2, // 1 cmol = 0.01 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'millimole',
+            'symbol' => 'mmol',
+            'factor' => 1E-3, // 1 mmol = 0.001 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'micromole',
+            'symbol' => 'µmol',
+            'factor' => 1E-6, // 1 µmol = 0.000001 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'nanomole',
+            'symbol' => 'nmol',
+            'factor' => 1E-9, // 1 nmol = 0.000000001 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'picomole',
+            'symbol' => 'pmol',
+            'factor' => 1E-12, // 1 pmol = 0.000000000001 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'femtomole',
+            'symbol' => 'fmol',
+            'factor' => 1E-15, // 1 fmol = 0.000000000000001 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'attomole',
+            'symbol' => 'amol',
+            'factor' => 1E-18, // 1 amol = 0.000000000000000001 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'zeptomole',
+            'symbol' => 'zmol',
+            'factor' => 1E-21, // 1 zmol = 0.000000000000000000001 mol
+        ],
+        [
+            'base_measurement' => 'mole',
+            'type' => 'amount',
+            'name' => 'yoctomole',
+            'symbol' => 'ymol',
+            'factor' => 1E-24, // 1 ymol = 0.000000000000000000000001 mol
+        ],
+        [
+            'type' => 'amount',
+            'name' => 'quantity',
+            'symbol' => 'qty',
+            'factor' => 1, // Base unit of the volume
+        ],
+        [
             'base_measurement' => 'kilogram',
             'type' => 'mass',
             'name' => 'yottagram',
