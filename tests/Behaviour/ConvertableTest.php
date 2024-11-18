@@ -17,7 +17,7 @@ it('can convert to base value', function () {
     $this->assertEquals(1, Unit::kilogram()->toBaseValue());
 });
 
-it('can conver to base unit', function () {
-    $this->assertEquals(Unit::kilogram(1), Unit::kilogram()->toBaseUnit());
+it('can convert to base unit', function () {
+    $this->assertEquals(Unit::kilogram(), Unit::gram(1000)->toBaseUnit());
     $this->assertEquals(Unit::kilogram(), Unit::kilogram()->toBaseUnit());
 });
