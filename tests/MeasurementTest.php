@@ -67,6 +67,7 @@ it('has getters', function () {
 
     $this->assertEquals(Measurement::kilogram(), $measurement->getBaseMeasurement());
     $this->assertEquals(MeasurementType::MASS, $measurement->getType());
+    $this->assertEquals(['metric'], $measurement->getSystems());
     $this->assertEquals('gram', $measurement->getName());
     $this->assertEquals('g', $measurement->getSymbol());
     $this->assertEquals(0.001, $measurement->getFactor());

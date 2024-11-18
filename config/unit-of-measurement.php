@@ -5,6 +5,7 @@ return [
     'measurements' => [
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'yottamole',
             'symbol' => 'Ymol',
@@ -12,6 +13,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'zettamole',
             'symbol' => 'Zmol',
@@ -19,6 +21,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'examole',
             'symbol' => 'Emol',
@@ -26,6 +29,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'petamole',
             'symbol' => 'Pmol',
@@ -33,6 +37,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'teramole',
             'symbol' => 'Tmol',
@@ -40,6 +45,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'gigamole',
             'symbol' => 'Gmol',
@@ -47,6 +53,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'megamole',
             'symbol' => 'Mmol',
@@ -54,12 +61,14 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'kilomole',
             'symbol' => 'kmol',
             'factor' => 1E3, // 1 kmol = 10^3 mol
         ],
         [
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'mole',
             'symbol' => 'mol',
@@ -67,6 +76,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'hectomole',
             'symbol' => 'hmol',
@@ -74,6 +84,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'decamole',
             'symbol' => 'damol',
@@ -81,6 +92,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'decimole',
             'symbol' => 'dmol',
@@ -88,6 +100,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'centimole',
             'symbol' => 'cmol',
@@ -95,6 +108,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'millimole',
             'symbol' => 'mmol',
@@ -102,6 +116,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'micromole',
             'symbol' => 'µmol',
@@ -109,6 +124,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'nanomole',
             'symbol' => 'nmol',
@@ -116,6 +132,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'picomole',
             'symbol' => 'pmol',
@@ -123,6 +140,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'femtomole',
             'symbol' => 'fmol',
@@ -130,6 +148,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'attomole',
             'symbol' => 'amol',
@@ -137,6 +156,7 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'zeptomole',
             'symbol' => 'zmol',
@@ -144,12 +164,14 @@ return [
         ],
         [
             'base_measurement' => 'mole',
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'yoctomole',
             'symbol' => 'ymol',
             'factor' => 1E-24, // 1 ymol = 0.000000000000000000000001 mol
         ],
         [
+            'system' => ['metric'],
             'type' => 'amount',
             'name' => 'quantity',
             'symbol' => 'qty',
@@ -157,6 +179,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'yottaSquareMeter',
             'symbol' => 'Ym²',
@@ -164,6 +187,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'zettaSquareMeter',
             'symbol' => 'Zm²',
@@ -171,6 +195,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'exaSquareMeter',
             'symbol' => 'Em²',
@@ -178,6 +203,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'petaSquareMeter',
             'symbol' => 'Pm²',
@@ -185,6 +211,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'teraSquareMeter',
             'symbol' => 'Tm²',
@@ -192,6 +219,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'gigaSquareMeter',
             'symbol' => 'Gm²',
@@ -199,6 +227,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'megaSquareMeter',
             'symbol' => 'Mm²',
@@ -206,12 +235,14 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'kiloSquareMeter',
             'symbol' => 'km²',
             'factor' => 1E6, // (10^3)^2 = 10^6
         ],
         [
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'squareMeter',
             'symbol' => 'm²',
@@ -219,6 +250,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'deciSquareMeter',
             'symbol' => 'dm²',
@@ -226,6 +258,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'centiSquareMeter',
             'symbol' => 'cm²',
@@ -233,6 +266,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'milliSquareMeter',
             'symbol' => 'mm²',
@@ -240,6 +274,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'microSquareMeter',
             'symbol' => 'µm²',
@@ -247,6 +282,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'nanoSquareMeter',
             'symbol' => 'nm²',
@@ -254,6 +290,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'picoSquareMeter',
             'symbol' => 'pm²',
@@ -261,6 +298,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'femtoSquareMeter',
             'symbol' => 'fm²',
@@ -268,6 +306,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'attoSquareMeter',
             'symbol' => 'am²',
@@ -275,6 +314,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'zeptoSquareMeter',
             'symbol' => 'zm²',
@@ -282,6 +322,7 @@ return [
         ],
         [
             'base_measurement' => 'square meter',
+            'system' => ['metric'],
             'type' => 'area',
             'name' => 'yoctoSquareMeter',
             'symbol' => 'ym²',
@@ -289,6 +330,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'yottameter',
             'symbol' => 'Ym',
@@ -296,6 +338,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'zettameter',
             'symbol' => 'Zm',
@@ -303,6 +346,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'exameter',
             'symbol' => 'Em',
@@ -310,6 +354,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'petameter',
             'symbol' => 'Pm',
@@ -317,6 +362,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'terameter',
             'symbol' => 'Tm',
@@ -324,6 +370,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'gigameter',
             'symbol' => 'Gm',
@@ -331,6 +378,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'megameter',
             'symbol' => 'Mm',
@@ -338,12 +386,14 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'kilometer',
             'symbol' => 'km',
             'factor' => 1E3, // 1 km = 10^3 m
         ],
         [
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'meter',
             'symbol' => 'm',
@@ -351,6 +401,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'decimeter',
             'symbol' => 'dm',
@@ -358,6 +409,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'centimeter',
             'symbol' => 'cm',
@@ -365,6 +417,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'millimeter',
             'symbol' => 'mm',
@@ -372,6 +425,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'micrometer',
             'symbol' => 'µm',
@@ -379,6 +433,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'nanometer',
             'symbol' => 'nm',
@@ -386,6 +441,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'picometer',
             'symbol' => 'pm',
@@ -393,6 +449,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'femtometer',
             'symbol' => 'fm',
@@ -400,6 +457,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'attometer',
             'symbol' => 'am',
@@ -407,6 +465,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'zeptometer',
             'symbol' => 'zm',
@@ -414,6 +473,7 @@ return [
         ],
         [
             'base_measurement' => 'meter',
+            'system' => ['metric'],
             'type' => 'length',
             'name' => 'yoctometer',
             'symbol' => 'ym',
@@ -421,6 +481,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'yottagram',
             'symbol' => 'Yg',
@@ -428,6 +489,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'zettagram',
             'symbol' => 'Zg',
@@ -435,6 +497,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'exagram',
             'symbol' => 'Eg',
@@ -442,6 +505,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'petagram',
             'symbol' => 'Pg',
@@ -449,6 +513,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'teragram',
             'symbol' => 'Tg',
@@ -456,6 +521,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'gigagram',
             'symbol' => 'Gg',
@@ -463,12 +529,14 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'megagram',
             'symbol' => 'Mg',
             'factor' => 1E3, // 1 Mg = 10^6 g = 10^3 kg
         ],
         [
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'kilogram',
             'symbol' => 'kg',
@@ -476,6 +544,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'hectogram',
             'symbol' => 'hg',
@@ -483,6 +552,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'decagram',
             'symbol' => 'dag',
@@ -490,6 +560,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'gram',
             'symbol' => 'g',
@@ -497,6 +568,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'decigram',
             'symbol' => 'dg',
@@ -504,6 +576,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'centigram',
             'symbol' => 'cg',
@@ -511,6 +584,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'milligram',
             'symbol' => 'mg',
@@ -518,6 +592,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'microgram',
             'symbol' => 'µg',
@@ -525,6 +600,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'nanogram',
             'symbol' => 'ng',
@@ -532,6 +608,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'picogram',
             'symbol' => 'pg',
@@ -539,6 +616,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'femtogram',
             'symbol' => 'fg',
@@ -546,6 +624,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'attogram',
             'symbol' => 'ag',
@@ -553,6 +632,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'zeptogram',
             'symbol' => 'zg',
@@ -560,6 +640,7 @@ return [
         ],
         [
             'base_measurement' => 'kilogram',
+            'system' => ['metric'],
             'type' => 'mass',
             'name' => 'yoctogram',
             'symbol' => 'yg',
@@ -568,6 +649,7 @@ return [
 
         [
             'base_measurement' => 'kelvin',
+            'system' => ['metric'],
             'type' => 'temperature',
             'name' => 'celsius',
             'symbol' => '°C',
@@ -576,6 +658,7 @@ return [
         ],
         [
             'base_measurement' => 'kelvin',
+            'system' => ['usc'],
             'type' => 'temperature',
             'name' => 'fahrenheit',
             'symbol' => '°F',
@@ -584,12 +667,14 @@ return [
         ],
         [
             'base_measurement' => 'kelvin',
+            'system' => [],
             'type' => 'temperature',
             'name' => 'rankine',
             'symbol' => '°R',
             'factor' => 5 / 9,
         ],
         [
+            'system' => [],
             'type' => 'temperature',
             'name' => 'kelvin',
             'symbol' => 'K',
@@ -597,6 +682,7 @@ return [
         ],
         [
             'base_measurement' => 'kelvin',
+            'system' => [],
             'type' => 'temperature',
             'name' => 'romer',
             'symbol' => '°Rø',
@@ -607,6 +693,7 @@ return [
 
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicYottameter',
             'symbol' => 'Ym³',
@@ -614,6 +701,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicZettameter',
             'symbol' => 'Zm³',
@@ -621,6 +709,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicExameter',
             'symbol' => 'Em³',
@@ -628,6 +717,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicPetameter',
             'symbol' => 'Pm³',
@@ -635,6 +725,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicTerameter',
             'symbol' => 'Tm³',
@@ -642,6 +733,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicGigameter',
             'symbol' => 'Gm³',
@@ -649,6 +741,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicMegameter',
             'symbol' => 'Mm³',
@@ -656,12 +749,14 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicKilometer',
             'symbol' => 'km³',
             'factor' => 1E9, // 1 km³ = (10^3 m)³ = 10^9 m³
         ],
         [
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicMeter',
             'symbol' => 'm³',
@@ -669,6 +764,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicDecimeter',
             'symbol' => 'dm³',
@@ -676,6 +772,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicCentimeter',
             'symbol' => 'cm³',
@@ -683,6 +780,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicMillimeter',
             'symbol' => 'mm³',
@@ -690,6 +788,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicMicrometer',
             'symbol' => 'µm³',
@@ -697,6 +796,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicNanometer',
             'symbol' => 'nm³',
@@ -704,6 +804,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicPicometer',
             'symbol' => 'pm³',
@@ -711,6 +812,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicFemtometer',
             'symbol' => 'fm³',
@@ -718,6 +820,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicAttometer',
             'symbol' => 'am³',
@@ -725,6 +828,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicZeptometer',
             'symbol' => 'zm³',
@@ -732,6 +836,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'cubicYoctometer',
             'symbol' => 'ym³',
@@ -740,6 +845,7 @@ return [
 
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'yottaLiter',
             'symbol' => 'YL',
@@ -747,6 +853,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'zettaLiter',
             'symbol' => 'ZL',
@@ -754,6 +861,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'exaLiter',
             'symbol' => 'EL',
@@ -761,6 +869,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'petaLiter',
             'symbol' => 'PL',
@@ -768,6 +877,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'teraLiter',
             'symbol' => 'TL',
@@ -775,6 +885,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'gigaLiter',
             'symbol' => 'GL',
@@ -782,6 +893,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'megaLiter',
             'symbol' => 'ML',
@@ -789,6 +901,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'kiloLiter',
             'symbol' => 'kL',
@@ -796,6 +909,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'hectoLiter',
             'symbol' => 'hL',
@@ -803,6 +917,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'decaLiter',
             'symbol' => 'daL',
@@ -810,6 +925,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'liter',
             'symbol' => 'L',
@@ -817,6 +933,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'deciLiter',
             'symbol' => 'dL',
@@ -824,6 +941,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'centiLiter',
             'symbol' => 'cL',
@@ -831,6 +949,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'milliLiter',
             'symbol' => 'mL',
@@ -838,6 +957,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'microLiter',
             'symbol' => 'µL',
@@ -845,6 +965,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'nanoLiter',
             'symbol' => 'nL',
@@ -852,6 +973,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'picoLiter',
             'symbol' => 'pL',
@@ -859,6 +981,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'femtoLiter',
             'symbol' => 'fL',
@@ -866,6 +989,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'attoLiter',
             'symbol' => 'aL',
@@ -873,6 +997,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'zeptoLiter',
             'symbol' => 'zL',
@@ -880,6 +1005,7 @@ return [
         ],
         [
             'base_measurement' => 'cubicMeter',
+            'system' => ['metric'],
             'type' => 'volume',
             'name' => 'yoctoLiter',
             'symbol' => 'yL',

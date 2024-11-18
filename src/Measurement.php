@@ -153,6 +153,8 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
 
     private MeasurementType $type;
 
+    private array $systems;
+
     private string $name;
 
     private string $symbol;
@@ -209,6 +211,7 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
 
         $this->baseMeasurement = isset($measurementAttributes['base_measurement']) ? new Measurement($measurementAttributes['base_measurement']) : null;
         $this->type = MeasurementType::from($measurementAttributes['type']);
+        $this->systems = (array) $measurementAttributes['system'];
         $this->name = (string) $measurementAttributes['name'];
         $this->symbol = (string) $measurementAttributes['symbol'];
         $this->preAddition = (float) ($measurementAttributes['pre_addition'] ?? 0);
@@ -286,6 +289,14 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
     public function getSymbol(): string
     {
         return $this->symbol;
+    }
+
+    /**
+     * Get the systems.
+     */
+    public function getSystems(): array
+    {
+        return $this->systems;
     }
 
     /**
