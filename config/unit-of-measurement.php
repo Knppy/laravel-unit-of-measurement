@@ -178,7 +178,7 @@ return [
             'factor' => 1, // Base unit of the volume
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'yottaSquareMeter',
@@ -186,7 +186,7 @@ return [
             'factor' => 1E48, // (10^24)^2 = 10^48
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'zettaSquareMeter',
@@ -194,7 +194,7 @@ return [
             'factor' => 1E42, // (10^21)^2 = 10^42
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'exaSquareMeter',
@@ -202,7 +202,7 @@ return [
             'factor' => 1E36, // (10^18)^2 = 10^36
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'petaSquareMeter',
@@ -210,7 +210,7 @@ return [
             'factor' => 1E30, // (10^15)^2 = 10^30
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'teraSquareMeter',
@@ -218,7 +218,7 @@ return [
             'factor' => 1E24, // (10^12)^2 = 10^24
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'gigaSquareMeter',
@@ -226,7 +226,7 @@ return [
             'factor' => 1E18, // (10^9)^2 = 10^18
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'megaSquareMeter',
@@ -234,7 +234,7 @@ return [
             'factor' => 1E12, // (10^6)^2 = 10^12
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'kiloSquareMeter',
@@ -249,7 +249,7 @@ return [
             'factor' => 1, // Base unit of area
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'deciSquareMeter',
@@ -257,7 +257,7 @@ return [
             'factor' => 1E-2, // (10^-1)^2 = 10^-2
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'centiSquareMeter',
@@ -265,7 +265,7 @@ return [
             'factor' => 1E-4, // (10^-2)^2 = 10^-4
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'milliSquareMeter',
@@ -273,7 +273,7 @@ return [
             'factor' => 1E-6, // (10^-3)^2 = 10^-6
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'microSquareMeter',
@@ -281,7 +281,7 @@ return [
             'factor' => 1E-12, // (10^-6)^2 = 10^-12
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'nanoSquareMeter',
@@ -289,7 +289,7 @@ return [
             'factor' => 1E-18, // (10^-9)^2 = 10^-18
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'picoSquareMeter',
@@ -297,7 +297,7 @@ return [
             'factor' => 1E-24, // (10^-12)^2 = 10^-24
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'femtoSquareMeter',
@@ -305,7 +305,7 @@ return [
             'factor' => 1E-30, // (10^-15)^2 = 10^-30
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'attoSquareMeter',
@@ -313,7 +313,7 @@ return [
             'factor' => 1E-36, // (10^-18)^2 = 10^-36
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'zeptoSquareMeter',
@@ -321,12 +321,76 @@ return [
             'factor' => 1E-42, // (10^-21)^2 = 10^-42
         ],
         [
-            'base_measurement' => 'square meter',
+            'base_measurement' => 'squareMeter',
             'system' => ['metric'],
             'type' => 'area',
             'name' => 'yoctoSquareMeter',
             'symbol' => 'ym²',
             'factor' => 1E-48, // (10^-24)^2 = 10^-48
+        ],
+        [
+            'base_measurement' => 'squareMeter',
+            'system' => ['imperial', 'us'],
+            'type' => 'area',
+            'name' => 'acre',
+            'symbol' => 'ac',
+            'factor' => 4046.8564224, // 1 acre = 4046.8564224 square meters
+        ],
+        [
+            'base_measurement' => 'squareMeter',
+            'system' => ['metric'],
+            'type' => 'area',
+            'name' => 'are',
+            'symbol' => 'a',
+            'factor' => 100, // 1 are = 100 square meters
+        ],
+        [
+            'base_measurement' => 'squareMeter',
+            'system' => ['metric'],
+            'type' => 'area',
+            'name' => 'hectare',
+            'symbol' => 'ha',
+            'factor' => 10000, // 1 hectare = 10,000 square meters
+        ],
+        [
+            'base_measurement' => 'squareMeter',
+            'system' => ['imperial', 'us'],
+            'type' => 'area',
+            'name' => 'perch',
+            'symbol' => 'perch',
+            'factor' => 25.29285264, // 1 perch = 25.29285264 square meters (rod²)
+        ],
+        [
+            'base_measurement' => 'squareMeter',
+            'system' => ['imperial', 'us'],
+            'type' => 'area',
+            'name' => 'rood',
+            'symbol' => 'rood',
+            'factor' => 1011.7141056, // 1 rood = 1/4 acre = 1011.7141056 square meters
+        ],
+        [
+            'base_measurement' => 'squareMeter',
+            'system' => ['us'],
+            'type' => 'area',
+            'name' => 'section',
+            'symbol' => 'section',
+            'factor' => 2589988.110336, // 1 section = 1 square mile = 2589988.110336 square meters
+        ],
+        [
+            'base_measurement' => 'squareMeter',
+            'system' => ['us'],
+            'type' => 'area',
+            'name' => 'surveyAcre',
+            'symbol' => 'survey ac',
+            'factor' => 4046.872609874252, // 1 survey acre = 4046.872609874252 square meters
+        ],
+        [
+            'base_measurement' => 'squareMeter',
+            'system' => ['us'],
+            'type' => 'area',
+            'name' => 'surveyTownship',
+            'symbol' => 'survey township',
+            'factor' => 93239571.972, // 1 survey township = 36 square miles = 93,239,571.972 square meters
         ],
         [
             'base_measurement' => 'meter',
@@ -1186,6 +1250,239 @@ return [
             'name' => 'yoctoLiter',
             'symbol' => 'yL',
             'factor' => 1E-27, // 1 yL = 10^-27 m³
+        ],
+
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial', 'us'],
+            'type' => 'volume',
+            'name' => 'acreFoot',
+            'symbol' => 'ac-ft',
+            'factor' => 1233.48183754752, // 1 acre-foot = 1233.48183754752 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial', 'us'],
+            'type' => 'volume',
+            'name' => 'bushel',
+            'symbol' => 'bu',
+            'factor' => 0.03636872, // 1 bushel = 0.03636872 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'dryBarrel',
+            'symbol' => 'bbl dry',
+            'factor' => 0.115628198985, // 1 dry barrel = 0.115628198985 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'dryGallon',
+            'symbol' => 'dry gal',
+            'factor' => 0.0044048838, // 1 dry gallon = 0.0044048838 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'dryPint',
+            'symbol' => 'dry pt',
+            'factor' => 0.00055061047, // 1 dry pint = 0.00055061047 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'dryQuart',
+            'symbol' => 'dry qt',
+            'factor' => 0.001101221, // 1 dry quart = 0.001101221 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'fluidDrachm',
+            'symbol' => 'fl dr',
+            'factor' => 0.0000035516328125, // 1 fluid drachm = 0.0000035516328125 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'fluidOunce',
+            'symbol' => 'fl oz',
+            'factor' => 0.0000284130625, // 1 fluid ounce = 0.0000284130625 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'fluidScruple',
+            'symbol' => 'fl scruple',
+            'factor' => 0.00000118387760416667, // 1 fluid scruple = 0.00000118387760416667 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'gallon',
+            'symbol' => 'gal',
+            'factor' => 0.00454609, // 1 gallon = 0.00454609 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'gill',
+            'symbol' => 'gi',
+            'factor' => 0.00011829411875, // 1 gill = 0.00011829411875 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'hogshead',
+            'symbol' => 'hhd',
+            'factor' => 0.32731848, // 1 hogshead = 0.32731848 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'liquidBarrel',
+            'symbol' => 'bbl',
+            'factor' => 0.16365924, // 1 liquid barrel = 0.16365924 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'minim',
+            'symbol' => 'min',
+            'factor' => 0.0000000591941, // 1 minim = 0.0000000591941 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial', 'us'],
+            'type' => 'volume',
+            'name' => 'oilBarrel',
+            'symbol' => 'bbl oil',
+            'factor' => 0.158987295, // 1 oil barrel = 0.158987295 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'peck',
+            'symbol' => 'pk',
+            'factor' => 0.00909218, // 1 peck = 0.00909218 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'pint',
+            'symbol' => 'pt',
+            'factor' => 0.00056826125, // 1 pint = 0.00056826125 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'quart',
+            'symbol' => 'qt',
+            'factor' => 0.0011365225, // 1 quart = 0.0011365225 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'tablespoon',
+            'symbol' => 'tbsp',
+            'factor' => 0.0000177582, // 1 tablespoon = 0.0000177582 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'teaspoon',
+            'symbol' => 'tsp',
+            'factor' => 0.000005919, // 1 teaspoon = 0.000005919 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
+            'name' => 'cup',
+            'symbol' => 'cup',
+            'factor' => 0.00028413125, // 1 cup = 0.00028413125 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['us'],
+            'type' => 'volume',
+            'name' => 'usFluidDrachm',
+            'symbol' => 'fl dr (US)',
+            'factor' => 0.0000036966912, // 1 US fluid drachm = 0.0000036966912 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['us'],
+            'type' => 'volume',
+            'name' => 'usFluidOunce',
+            'symbol' => 'fl oz (US)',
+            'factor' => 0.0000295735, // 1 US fluid ounce = 0.0000295735 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['us'],
+            'type' => 'volume',
+            'name' => 'usGill',
+            'symbol' => 'gi (US)',
+            'factor' => 0.00011829412, // 1 US gill = 0.00011829412 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['us'],
+            'type' => 'volume',
+            'name' => 'usLiquidGallon',
+            'symbol' => 'gal (US)',
+            'factor' => 0.00378541, // 1 US liquid gallon = 0.00378541 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['us'],
+            'type' => 'volume',
+            'name' => 'usLiquidPint',
+            'symbol' => 'pt (US)',
+            'factor' => 0.0004731765, // 1 US liquid pint = 0.0004731765 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['us'],
+            'type' => 'volume',
+            'name' => 'usLiquidQuart',
+            'symbol' => 'qt (US)',
+            'factor' => 0.00094635295, // 1 US liquid quart = 0.00094635295 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['us'],
+            'type' => 'volume',
+            'name' => 'usMinim',
+            'symbol' => 'min (US)',
+            'factor' => 0.00000006161151992, // 1 US minim = 0.00000006161151992 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['us'],
+            'type' => 'volume',
+            'name' => 'usShot',
+            'symbol' => 'shot (US)',
+            'factor' => 0.0000443603, // 1 US shot = 0.0000443603 cubic meters
         ],
     ],
 ];

@@ -55,6 +55,14 @@ use OutOfBoundsException;
  * @method static Measurement attoSquareMeter()
  * @method static Measurement zeptoSquareMeter()
  * @method static Measurement yoctoSquareMeter()
+ * @method static Measurement acre()
+ * @method static Measurement are()
+ * @method static Measurement hectare()
+ * @method static Measurement perch()
+ * @method static Measurement rood()
+ * @method static Measurement section()
+ * @method static Measurement surveyAcre()
+ * @method static Measurement surveyTownship()
  * @method static Measurement yottameter()
  * @method static Measurement zettameter()
  * @method static Measurement exameter()
@@ -161,6 +169,35 @@ use OutOfBoundsException;
  * @method static Measurement attoLiter()
  * @method static Measurement zeptoLiter()
  * @method static Measurement yoctoLiter()
+ * @method static Measurement acreFoot()
+ * @method static Measurement bushel()
+ * @method static Measurement dryBarrel()
+ * @method static Measurement dryGallon()
+ * @method static Measurement dryPint()
+ * @method static Measurement dryQuart()
+ * @method static Measurement fluidDrachm()
+ * @method static Measurement fluidOunce()
+ * @method static Measurement fluidScruple()
+ * @method static Measurement gallon()
+ * @method static Measurement gill()
+ * @method static Measurement hogshead()
+ * @method static Measurement liquidBarrel()
+ * @method static Measurement minim()
+ * @method static Measurement oilBarrel()
+ * @method static Measurement peck()
+ * @method static Measurement pint()
+ * @method static Measurement quart()
+ * @method static Measurement tablespoon()
+ * @method static Measurement teaspoon()
+ * @method static Measurement cup()
+ * @method static Measurement usFluidDrachm()
+ * @method static Measurement usFluidOunce()
+ * @method static Measurement usGill()
+ * @method static Measurement usLiquidGallon()
+ * @method static Measurement usLiquidPint()
+ * @method static Measurement usLiquidQuart()
+ * @method static Measurement usMinim()
+ * @method static Measurement usShot()
  */
 class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Renderable
 {
@@ -222,22 +259,22 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
         $measurements = self::measurements();
         $measurementAttributes = $measurements->where('name', '=', $measurement)->first();
 
-        if (! $measurementAttributes) {
+        if (!$measurementAttributes) {
             $measurementAttributes = $measurements->where('symbol', '=', $measurement)->first();
         }
 
-        if (! $measurementAttributes) {
-            throw new OutOfBoundsException('Invalid measurement "'.$measurement.'"');
+        if (!$measurementAttributes) {
+            throw new OutOfBoundsException('Invalid measurement "' . $measurement . '"');
         }
 
         $this->baseMeasurement = isset($measurementAttributes['base_measurement']) ? new Measurement($measurementAttributes['base_measurement']) : null;
         $this->type = MeasurementType::from($measurementAttributes['type']);
-        $this->systems = (array) $measurementAttributes['system'];
-        $this->name = (string) $measurementAttributes['name'];
-        $this->symbol = (string) $measurementAttributes['symbol'];
-        $this->preAddition = (float) ($measurementAttributes['pre_addition'] ?? 0);
-        $this->factor = (float) $measurementAttributes['factor'];
-        $this->postAddition = (float) ($measurementAttributes['post_addition'] ?? 0);
+        $this->systems = (array)$measurementAttributes['system'];
+        $this->name = (string)$measurementAttributes['name'];
+        $this->symbol = (string)$measurementAttributes['symbol'];
+        $this->preAddition = (float)($measurementAttributes['pre_addition'] ?? 0);
+        $this->factor = (float)$measurementAttributes['factor'];
+        $this->postAddition = (float)($measurementAttributes['post_addition'] ?? 0);
     }
 
     /**
@@ -341,7 +378,7 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
      */
     public function render(): string
     {
-        return $this->getSymbol().' ('.$this->getName().')';
+        return $this->getSymbol() . ' (' . $this->getName() . ')';
     }
 
     /**
@@ -361,7 +398,7 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
     /**
      * Convert the object to its JSON representation.
      *
-     * @param  int  $options
+     * @param int $options
      */
     public function toJson($options = 0): string
     {
