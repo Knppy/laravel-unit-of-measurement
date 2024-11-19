@@ -536,6 +536,14 @@ return [
             'factor' => 1E3, // 1 Mg = 10^6 g = 10^3 kg
         ],
         [
+            'base_measurement' => 'kilogram',
+            'system' => ['metric'],
+            'type' => 'mass',
+            'name' => 'tonne',
+            'symbol' => 'tonne',
+            'factor' => 1E3, // 1 tonne = 10^6 g = 10^3 kg
+        ],
+        [
             'system' => ['metric'],
             'type' => 'mass',
             'name' => 'kilogram',
@@ -645,6 +653,70 @@ return [
             'name' => 'yoctogram',
             'symbol' => 'yg',
             'factor' => 1E-27, // 1 yg = 0.000000000000000000000001 g = 0.000000000000000000000000001 kg
+        ],
+        [
+            'base_measurement' => 'kilogram',
+            'system' => ['imperial', 'us'],
+            'type' => 'mass',
+            'name' => 'pound',
+            'symbol' => 'lb',
+            'factor' => 0.45359237, // 1 pound = 0.45359237 kg
+        ],
+        [
+            'base_measurement' => 'kilogram',
+            'system' => ['imperial', 'us'],
+            'type' => 'mass',
+            'name' => 'drachm',
+            'symbol' => 'dr',
+            'factor' => 0.0017718451953125, // 1 drachm = 1/256 lb = 0.0017718451953125 kg
+        ],
+        [
+            'base_measurement' => 'kilogram',
+            'system' => ['imperial'],
+            'type' => 'mass',
+            'name' => 'longTon',
+            'symbol' => 'LT',
+            'factor' => 1016.0469088, // 1 long ton = 2240 lb = 1016.0469088 kg
+        ],
+        [
+            'base_measurement' => 'kilogram',
+            'system' => ['imperial'],
+            'type' => 'mass',
+            'name' => 'longHundredweight',
+            'symbol' => 'cwt (long)',
+            'factor' => 50.80234544, // 1 long hundredweight = 112 lb = 50.80234544 kg
+        ],
+        [
+            'base_measurement' => 'kilogram',
+            'system' => ['imperial', 'us'],
+            'type' => 'mass',
+            'name' => 'ounce',
+            'symbol' => 'oz',
+            'factor' => 0.028349523125, // 1 ounce = 1/16 lb = 0.028349523125 kg
+        ],
+        [
+            'base_measurement' => 'kilogram',
+            'system' => ['imperial'],
+            'type' => 'mass',
+            'name' => 'quarter',
+            'symbol' => 'qr',
+            'factor' => 12.70058636, // 1 quarter = 28 lb = 12.70058636 kg
+        ],
+        [
+            'base_measurement' => 'kilogram',
+            'system' => ['us'],
+            'type' => 'mass',
+            'name' => 'shortTon',
+            'symbol' => 'ST',
+            'factor' => 907.18474, // 1 short ton = 2000 lb = 907.18474 kg
+        ],
+        [
+            'base_measurement' => 'kilogram',
+            'system' => ['us'],
+            'type' => 'mass',
+            'name' => 'shortHundredweight',
+            'symbol' => 'cwt (short)',
+            'factor' => 45.359237, // 1 short hundredweight = 100 lb = 45.359237 kg
         ],
 
         [
