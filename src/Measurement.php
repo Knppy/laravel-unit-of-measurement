@@ -259,22 +259,22 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
         $measurements = self::measurements();
         $measurementAttributes = $measurements->where('name', '=', $measurement)->first();
 
-        if (!$measurementAttributes) {
+        if (! $measurementAttributes) {
             $measurementAttributes = $measurements->where('symbol', '=', $measurement)->first();
         }
 
-        if (!$measurementAttributes) {
-            throw new OutOfBoundsException('Invalid measurement "' . $measurement . '"');
+        if (! $measurementAttributes) {
+            throw new OutOfBoundsException('Invalid measurement "'.$measurement.'"');
         }
 
         $this->baseMeasurement = isset($measurementAttributes['base_measurement']) ? new Measurement($measurementAttributes['base_measurement']) : null;
         $this->type = MeasurementType::from($measurementAttributes['type']);
-        $this->systems = (array)$measurementAttributes['system'];
-        $this->name = (string)$measurementAttributes['name'];
-        $this->symbol = (string)$measurementAttributes['symbol'];
-        $this->preAddition = (float)($measurementAttributes['pre_addition'] ?? 0);
-        $this->factor = (float)$measurementAttributes['factor'];
-        $this->postAddition = (float)($measurementAttributes['post_addition'] ?? 0);
+        $this->systems = (array) $measurementAttributes['system'];
+        $this->name = (string) $measurementAttributes['name'];
+        $this->symbol = (string) $measurementAttributes['symbol'];
+        $this->preAddition = (float) ($measurementAttributes['pre_addition'] ?? 0);
+        $this->factor = (float) $measurementAttributes['factor'];
+        $this->postAddition = (float) ($measurementAttributes['post_addition'] ?? 0);
     }
 
     /**
@@ -378,7 +378,7 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
      */
     public function render(): string
     {
-        return $this->getSymbol() . ' (' . $this->getName() . ')';
+        return $this->getSymbol().' ('.$this->getName().')';
     }
 
     /**
@@ -398,7 +398,7 @@ class Measurement implements Arrayable, Castable, Jsonable, JsonSerializable, Re
     /**
      * Convert the object to its JSON representation.
      *
-     * @param int $options
+     * @param  int  $options
      */
     public function toJson($options = 0): string
     {
