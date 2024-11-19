@@ -1088,7 +1088,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'yottaLiter',
-            'symbol' => 'YL',
+            'symbol' => 'Yl',
             'factor' => 1E21, // 1 YL = 10^21 Liters = 10^18 m³
         ],
         [
@@ -1096,7 +1096,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'zettaLiter',
-            'symbol' => 'ZL',
+            'symbol' => 'Zl',
             'factor' => 1E18, // 1 ZL = 10^18 Liters = 10^15 m³
         ],
         [
@@ -1104,7 +1104,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'exaLiter',
-            'symbol' => 'EL',
+            'symbol' => 'El',
             'factor' => 1E15, // 1 EL = 10^15 Liters = 10^12 m³
         ],
         [
@@ -1112,7 +1112,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'petaLiter',
-            'symbol' => 'PL',
+            'symbol' => 'Pl',
             'factor' => 1E12, // 1 PL = 10^12 Liters = 10^9 m³
         ],
         [
@@ -1120,7 +1120,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'teraLiter',
-            'symbol' => 'TL',
+            'symbol' => 'Tl',
             'factor' => 1E9, // 1 TL = 10^9 Liters = 10^6 m³
         ],
         [
@@ -1128,7 +1128,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'gigaLiter',
-            'symbol' => 'GL',
+            'symbol' => 'Gl',
             'factor' => 1E6, // 1 GL = 10^6 Liters = 10^3 m³
         ],
         [
@@ -1136,7 +1136,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'megaLiter',
-            'symbol' => 'ML',
+            'symbol' => 'Ml',
             'factor' => 1E3, // 1 ML = 10^3 Liters = 1 m³
         ],
         [
@@ -1144,7 +1144,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'kiloLiter',
-            'symbol' => 'kL',
+            'symbol' => 'kl',
             'factor' => 1, // 1 kL = 1 m³
         ],
         [
@@ -1152,7 +1152,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'hectoLiter',
-            'symbol' => 'hL',
+            'symbol' => 'hl',
             'factor' => 1E-1, // 1 hL = 0.1 m³
         ],
         [
@@ -1160,7 +1160,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'decaLiter',
-            'symbol' => 'daL',
+            'symbol' => 'dal',
             'factor' => 1E-2, // 1 daL = 0.01 m³
         ],
         [
@@ -1168,7 +1168,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'liter',
-            'symbol' => 'L',
+            'symbol' => 'l',
             'factor' => 1E-3, // 1 L = 0.001 m³
         ],
         [
@@ -1176,7 +1176,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'deciLiter',
-            'symbol' => 'dL',
+            'symbol' => 'dl',
             'factor' => 1E-4, // 1 dL = 0.0001 m³
         ],
         [
@@ -1184,7 +1184,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'centiLiter',
-            'symbol' => 'cL',
+            'symbol' => 'cl',
             'factor' => 1E-5, // 1 cL = 0.00001 m³
         ],
         [
@@ -1192,7 +1192,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'milliLiter',
-            'symbol' => 'mL',
+            'symbol' => 'ml',
             'factor' => 1E-6, // 1 mL = 10^-6 m³
         ],
         [
@@ -1200,7 +1200,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'microLiter',
-            'symbol' => 'µL',
+            'symbol' => 'µl',
             'factor' => 1E-9, // 1 µL = 10^-9 m³
         ],
         [
@@ -1208,7 +1208,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'nanoLiter',
-            'symbol' => 'nL',
+            'symbol' => 'nl',
             'factor' => 1E-12, // 1 nL = 10^-12 m³
         ],
         [
@@ -1216,7 +1216,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'picoLiter',
-            'symbol' => 'pL',
+            'symbol' => 'pl',
             'factor' => 1E-15, // 1 pL = 10^-15 m³
         ],
         [
@@ -1224,7 +1224,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'femtoLiter',
-            'symbol' => 'fL',
+            'symbol' => 'fl',
             'factor' => 1E-18, // 1 fL = 10^-18 m³
         ],
         [
@@ -1232,7 +1232,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'attoLiter',
-            'symbol' => 'aL',
+            'symbol' => 'al',
             'factor' => 1E-21, // 1 aL = 10^-21 m³
         ],
         [
@@ -1240,7 +1240,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'zeptoLiter',
-            'symbol' => 'zL',
+            'symbol' => 'zl',
             'factor' => 1E-24, // 1 zL = 10^-24 m³
         ],
         [
@@ -1248,7 +1248,7 @@ return [
             'system' => ['metric'],
             'type' => 'volume',
             'name' => 'yoctoLiter',
-            'symbol' => 'yL',
+            'symbol' => 'yl',
             'factor' => 1E-27, // 1 yL = 10^-27 m³
         ],
 
