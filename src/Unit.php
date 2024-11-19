@@ -190,6 +190,7 @@ use Knppy\UnitOfMeasurement\Casts\UnitCast;
  * @method static Unit quart(float $value = 1)
  * @method static Unit tablespoon(float $value = 1)
  * @method static Unit teaspoon(float $value = 1)
+ * @method static Unit pinch(float $value = 1)
  * @method static Unit cup(float $value = 1)
  * @method static Unit usFluidDrachm(float $value = 1)
  * @method static Unit usFluidOunce(float $value = 1)

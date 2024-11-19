@@ -1416,6 +1416,14 @@ return [
             'base_measurement' => 'cubicMeter',
             'system' => ['imperial'],
             'type' => 'volume',
+            'name' => 'pinch',
+            'symbol' => 'pnch',
+            'factor' => 0.0000003699375, // 1 pinch = 0.0000003699375 cubic meters
+        ],
+        [
+            'base_measurement' => 'cubicMeter',
+            'system' => ['imperial'],
+            'type' => 'volume',
             'name' => 'cup',
             'symbol' => 'cup',
             'factor' => 0.00028413125, // 1 cup = 0.00028413125 cubic meters

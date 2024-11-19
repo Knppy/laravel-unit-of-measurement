@@ -189,6 +189,7 @@ use OutOfBoundsException;
  * @method static Measurement quart()
  * @method static Measurement tablespoon()
  * @method static Measurement teaspoon()
+ * @method static Measurement pinch()
  * @method static Measurement cup()
  * @method static Measurement usFluidDrachm()
  * @method static Measurement usFluidOunce()
