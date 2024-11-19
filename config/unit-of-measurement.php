@@ -480,6 +480,110 @@ return [
             'factor' => 1E-24, // 1 ym = 0.000000000000000000000001 m
         ],
         [
+            'base_measurement' => 'meter',
+            'system' => ['imperial', 'us'],
+            'type' => 'length',
+            'name' => 'cable',
+            'symbol' => 'cable',
+            'factor' => 185.2, // 1 cable = 185.2 meters (standard nautical definition)
+        ],
+        [
+            'base_measurement' => 'meter',
+            'system' => ['imperial', 'us'],
+            'type' => 'length',
+            'name' => 'chain',
+            'symbol' => 'ch',
+            'factor' => 20.1168, // 1 chain = 66 feet = 20.1168 meters
+        ],
+        [
+            'base_measurement' => 'meter',
+            'system' => ['imperial', 'us'],
+            'type' => 'length',
+            'name' => 'fathom',
+            'symbol' => 'ftm',
+            'factor' => 1.8288, // 1 fathom = 6 feet = 1.8288 meters
+        ],
+        [
+            'base_measurement' => 'meter',
+            'system' => ['imperial', 'us'],
+            'type' => 'length',
+            'name' => 'foot',
+            'symbol' => 'ft',
+            'factor' => 0.3048, // 1 foot = 0.3048 meters
+        ],
+        [
+            'base_measurement' => 'meter',
+            'system' => ['imperial'],
+            'type' => 'length',
+            'name' => 'furlong',
+            'symbol' => 'fur',
+            'factor' => 201.168, // 1 furlong = 660 feet = 201.168 meters
+        ],
+        [
+            'base_measurement' => 'meter',
+            'system' => ['imperial'],
+            'type' => 'length',
+            'name' => 'league',
+            'symbol' => 'lea',
+            'factor' => 4828.032, // 1 league = 3 miles = 4828.032 meters
+        ],
+        [
+            'base_measurement' => 'meter',
+            'system' => ['imperial', 'us'],
+            'type' => 'length',
+            'name' => 'link',
+            'symbol' => 'li',
+            'factor' => 0.201168, // 1 link = 1/100 chain = 0.201168 meters
+        ],
+        [
+            'base_measurement' => 'meter',
+            'system' => ['imperial', 'us'],
+            'type' => 'length',
+            'name' => 'mile',
+            'symbol' => 'mi',
+            'factor' => 1609.344, // 1 mile = 5280 feet = 1609.344 meters
+        ],
+        [
+            'base_measurement' => 'meter',
+            'system' => ['imperial', 'us'],
+            'type' => 'length',
+            'name' => 'pica',
+            'symbol' => 'P',
+            'factor' => 0.00423333333, // 1 pica = 1/6 inch = 0.00423333333 meters
+        ],
+        [
+            'base_measurement' => 'meter',
+            'system' => ['imperial', 'us'],
+            'type' => 'length',
+            'name' => 'point',
+            'symbol' => 'pt',
+            'factor' => 0.000352777778, // 1 point = 1/72 inch = 0.000352777778 meters
+        ],
+        [
+            'base_measurement' => 'meter',
+            'system' => ['imperial', 'us'],
+            'type' => 'length',
+            'name' => 'rod',
+            'symbol' => 'rd',
+            'factor' => 5.0292, // 1 rod = 16.5 feet = 5.0292 meters
+        ],
+        [
+            'base_measurement' => 'meter',
+            'system' => ['imperial', 'us'],
+            'type' => 'length',
+            'name' => 'thou',
+            'symbol' => 'th',
+            'factor' => 0.0000254, // 1 thou = 1/1000 inch = 0.0000254 meters
+        ],
+        [
+            'base_measurement' => 'meter',
+            'system' => ['imperial', 'us'],
+            'type' => 'length',
+            'name' => 'yard',
+            'symbol' => 'yd',
+            'factor' => 0.9144, // 1 yard = 3 feet = 0.9144 meters
+        ],
+        [
             'base_measurement' => 'kilogram',
             'system' => ['metric'],
             'type' => 'mass',
